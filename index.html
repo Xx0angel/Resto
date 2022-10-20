@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- CDN Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Swipper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <title>Burguer Co.</title>
+</head>
+
+<body>
+    <!-- header section start -->
+    <header class="header">
+        <a href="#inicio" class="logo"><i class="logo__icon fa-solid fa-utensils"></i>Resto.</a>
+
+        <nav class="navbar">
+            <a href="#inicio" class="active navbar__link">Inicio</a>
+            <a href="#platos" class="navbar__link">Platos</a>
+            <a href="#acerca" class="navbar__link">Acerca</a>
+            <a href="#menu" class="navbar__link">Menu</a>
+            <a href="#reseñas" class="navbar__link">Reseñas</a>
+            <a href="#ordenar" class="navbar__link">Ordenar</a>
+        </nav>
+
+        <div class="icons">
+            <i class="icons__icon fas fa-bars" id="menu-bars"></i>
+            <i class="icons__icon fas fa-search" id="search-icon"></i>
+            <a href="#" class="icons__icon fas fa-heart"></a>
+            <a href="#" class="icons__icon fas fa-shopping-cart"></a>
+        </div>
+
+    </header>
+
+    <!-- Header sections end -->
+
+    <!-- search section start -->
+    <form action="" id="search">
+        <input type="search" placeholder="Buscar..." name="search" id="search__box">
+        <label for="search__box" id="search__icon-form" class="fas fa-search"></label>
+        <i class="fas fa-times close__form"></i>
+    </form>
+    <!-- search section end -->
+
+    <!-- home section start -->
+    <section class="home" id="inicio">
+
+        <div class="swiper home__slider">
+
+            <div class="swiper-wrapper wrapper">
+
+                <div class="swiper-slide slide__item">
+                    <div class="content__item">
+                        <span class="content__dish">Nuestro plato especial</span>
+                        <h3 class="content__title">Spaguethi picante</h3>
+                        <p class="content__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Doloremque iste iusto architecto!</p>
+                        <a href="#" class="btn">Ordenar</a>
+                    </div>
+                    <div class="slide__img">
+                        <img class="img__home" src="./img/home-img-1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide__item">
+                    <div class="content__item">
+                        <span class="content__dish">Nuestro plato especial</span>
+                        <h3 class="content__title">Pollo frito</h3>
+                        <p class="content__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Doloremque iste iusto architecto!</p>
+                        <a href="#" class="btn">Ordenar</a>
+                    </div>
+                    <div class="slide__img">
+                        <img class="img__home" src="./img/home-img-2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide__item">
+                    <div class="content__item">
+                        <span class="content__dish">Nuestro plato especial</span>
+                        <h3 class="content__title">Pizza</h3>
+                        <p class="content__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Doloremque iste iusto architecto!</p>
+                        <a href="#" class="btn">Ordenar</a>
+                    </div>
+                    <div class="slide__img">
+                        <img class="img__home" src="./img/home-img-3.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- home section end -->
+
+    <!-- dishes section start -->
+
+    <section class="dishes" id="platos">
+
+        <h3 class="sub__heading">Nuestros Platos</h3>
+        <h1 class="heading">Platos populares</h1>
+
+        <div class="dishes__container">
+
+            <div class="dishes__box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./img/dish-1.png" alt="">
+                <h3>Deliciosa Comida</h3>
+                <div class="dishes__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="dishes__price">$89.99</span>
+                <a href="#" class="btn">Añadir </a>
+            </div>
+
+            <div class="dishes__box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./img/dish-2.png" alt="">
+                <h3>Deliciosa Comida</h3>
+                <div class="dishes__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$89.99</span>
+                <a href="#" class="btn">Añadir </a>
+            </div>
+
+            <div class="dishes__box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./img/dish-3.png" alt="">
+                <h3>Deliciosa Comida</h3>
+                <div class="dishes__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$89.99</span>
+                <a href="#" class="btn">Añadir </a>
+            </div>
+
+            <div class="dishes__box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./img/dish-4.png" alt="">
+                <h3>Deliciosa Comida</h3>
+                <div class="dishes__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$89.99</span>
+                <a href="#" class="btn">Añadir </a>
+            </div>
+
+            <div class="dishes__box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./img/dish-5.png" alt="">
+                <h3>Deliciosa Comida</h3>
+                <div class="dishes__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$89.99</span>
+                <a href="#" class="btn">Añadir </a>
+            </div>
+
+            <div class="dishes__box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./img/dish-6.png" alt="">
+                <h3>Deliciosa Comida</h3>
+                <div class="dishes__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$89.99</span>
+                <a href="#" class="btn">Añadir </a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- dishes section end -->
+
+    <!-- about section start  -->
+
+    <section class="about">
+
+        <h3 class="sub__heading">Acerca de</h3>
+        <h1 class="heading">¿Por qué elegirnos?</h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="./img/about-img.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>La mejor comida </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsa qui optio dicta quis velit
+                    repellendus ratione, quaerat exercitationem amet tempore cupiditate ex nesciunt, inventore atque
+                    tempora. Saepe, sunt cum!</p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium voluptas fugiat magni! Aperiam
+                    eum velit natus error. Vitae, nostrum necessitatibus?
+                </p>
+                <div class="icons__container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Envio gratis</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Facil pago</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>Servicio 24/7</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">Leer más</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- about section end -->
+
+    <!-- Start section menu -->
+
+    <section class="menu" id="menu">
+
+        <h3 class="sub__heading">Nuestro Menu</h3>
+        <h1 class="heading">¿Por qué elegirnos?</h1>
+
+        <div class="menu__flex">
+
+            <div class="menu__item">
+                <img class="menu__item-img" src="/img/menu-1.jpg" alt="">
+                <div class="menu__item-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3 class="menu__item-title">Deliciosa Comida</h3>
+                <p class="menu__item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+                    quae?</p>
+                <a href="#" class="btn">Añadir </a>
+                <span class="menu__item-price">$99.90</span>
+            </div>
+
+            <div class="menu__item">
+                <img class="menu__item-img" src="/img/menu-2.jpg" alt="">
+                <div class="menu__item-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3 class="menu__item-title">Deliciosa Comida</h3>
+                <p class="menu__item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+                    quae?</p>
+                <a href="#" class="btn">Añadir </a>
+                <span class="menu__item-price">$99.90</span>
+            </div>
+
+            <div class="menu__item">
+                <img class="menu__item-img" src="/img/menu-3.jpg" alt="">
+                <div class="menu__item-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3 class="menu__item-title">Deliciosa Comida</h3>
+                <p class="menu__item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+                    quae?</p>
+                <a href="#" class="btn">Añadir </a>
+                <span class="menu__item-price">$99.90</span>
+            </div>
+
+            <div class="menu__item">
+                <img class="menu__item-img" src="/img/menu-4.jpg" alt="">
+                <div class="menu__item-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3 class="menu__item-title">Deliciosa Comida</h3>
+                <p class="menu__item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+                    quae?</p>
+                <a href="#" class="btn">Añadir </a>
+                <span class="menu__item-price">$99.90</span>
+            </div>
+
+            <div class="menu__item">
+                <img class="menu__item-img" src="/img/menu-5.jpg" alt="">
+                <div class="menu__item-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3 class="menu__item-title">Deliciosa Comida</h3>
+                <p class="menu__item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+                    quae?</p>
+                <a href="#" class="btn">Añadir </a>
+                <span class="menu__item-price">$99.90</span>
+            </div>
+
+            <div class="menu__item">
+                <img class="menu__item-img" src="/img/menu-6.jpg" alt="">
+                <div class="menu__item-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3 class="menu__item-title">Deliciosa Comida</h3>
+                <p class="menu__item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+                    quae?</p>
+                <a href="#" class="btn">Añadir </a>
+                <span class="menu__item-price">$99.90</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- End section menu -->
+
+    <!-- Start section review -->
+
+    <section class="review" id="#review">
+
+        <h3 class="sub__heading">Nuestro Menu</h3>
+        <h1 class="heading">¿Por qué elegirnos?</h1>
+
+        <div class="swiper-container review-slider">
+
+            <div class="swiper-wrapper review__container">
+
+                <div class="swiper-slide slide review__item">
+                    <div class="review__item-card">
+                        <img class="review__card-img" src="./img/pic-1.png" alt="">
+                        <div>
+                            <h3 class="review__card-name">Daniel Dominguez</h3>
+                            <div class="review__card-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <i class="review__card-quote fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <p class="review__card-rev">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita beatae illum doloribus,
+                        numquam
+                        fugit soluta illo perspiciatis voluptates perferendis et quos, suscipit fugiat nobis accusantium
+                        adipisci a nihil ullam cum!
+                    </p>
+                </div>
+
+                <div class="swiper-slide slide review__item">
+                    <div class="review__item-card">
+                        <img class="review__card-img" src="./img/pic-2.png" alt="">
+                        <div>
+                            <h3 class="review__card-name">Fatima Hernandez</h3>
+                            <div class="review__card-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <i class="review__card-quote fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <p class="review__card-rev">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita beatae illum doloribus,
+                        numquam
+                        fugit soluta illo perspiciatis voluptates perferendis et quos, suscipit fugiat nobis accusantium
+                        adipisci a nihil ullam cum!
+                    </p>
+                </div>
+
+                <div class="swiper-slide slide review__item">
+                    <div class="review__item-card">
+                        <img class="review__card-img" src="./img/pic-3.png" alt="">
+                        <div>
+                            <h3 class="review__card-name">Yair Mancera</h3>
+                            <div class="review__card-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <i class="review__card-quote fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <p class="review__card-rev">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita beatae illum doloribus,
+                        numquam
+                        fugit soluta illo perspiciatis voluptates perferendis et quos, suscipit fugiat nobis accusantium
+                        adipisci a nihil ullam cum!
+                    </p>
+                </div>
+
+                <div class="swiper-slide slide review__item">
+                    <div class="review__item-card">
+                        <img class="review__card-img" src="./img/pic-4.png" alt="">
+                        <div>
+                            <h3 class="review__card-name">Rocio Gonzales</h3>
+                            <div class="review__card-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <i class="review__card-quote fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <p class="review__card-rev">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita beatae illum doloribus,
+                        numquam
+                        fugit soluta illo perspiciatis voluptates perferendis et quos, suscipit fugiat nobis accusantium
+                        adipisci a nihil ullam cum!
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- End section review -->
+
+    <!-- order section start -->
+
+    <section class="order">
+
+        <h3 class="sub__heading">Pide Ya</h3>
+        <h1 class="heading">Envio rapido y gratis</h1>
+
+        <form class="order__form" action="">
+
+            <div class="inputBox">
+                <div class="input">
+                    <span>Tu nombre</span>
+                    <input type="text" placeholder="Ingresa tu nombre">
+                </div>
+                <div class="input">
+                    <span>Tu numero</span>
+                    <input type="number" placeholder="Ingresa tu numero">
+                </div>
+
+            </div>
+
+            <div class="inputBox">
+                <div class="input">
+                    <span>Tu orden</span>
+                    <input type="text" placeholder="Ingresa tu orden">
+                </div>
+                <div class="input">
+                    <span>Extra</span>
+                    <input type="test" placeholder="Con extra...">
+                </div>
+
+            </div>
+
+            <div class="inputBox">
+                <div class="input">
+                    <span>¿Cuántos?</span>
+                    <input type="number" placeholder="Cantidad de ordenes">
+                </div>
+                <div class="input">
+                    <span>Fecha y hora</span>
+                    <input type="datetime-local">
+                </div>
+
+            </div>
+
+            <div class="inputBox">
+                <div class="input">
+                    <span>Tu dirección</span>
+                    <textarea name="" placeholder="Ingresa tu dirección" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="input">
+                    <span>Tus anotaciones</span>
+                    <textarea name="" placeholder="Ingresa información adicional (opcional)" id="" cols="30"
+                        rows="10"></textarea>
+                </div>
+            </div>
+
+            <input type="submit" value="Pedir" class="btn">
+        </form>
+
+    </section>
+
+    <!-- order section end -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="./js/script.js"></script>
+
+</html>

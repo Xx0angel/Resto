@@ -52,6 +52,7 @@ section:nth-child(even) {
 
 .header {
     position: fixed;
+    width: 100%;
     background-color: #fff;
     top: 0;
     left: 0;
@@ -603,6 +604,11 @@ section:nth-child(even) {
 }
 
 @media (max-width: 750px) {
+    .header{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
     .order {
         .order__form {
             width: 100%;

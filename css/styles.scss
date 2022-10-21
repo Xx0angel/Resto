@@ -524,11 +524,6 @@ section:nth-child(even) {
         }
     }
 
-    .hr__footer {
-        width: 100px;
-        height: 5px;
-        color: rgba($color: #ffffff, $alpha: 0.8);
-    }
 
     .footer__copyright {
         .copyright {
@@ -536,6 +531,28 @@ section:nth-child(even) {
             color: rgba($black, $alpha: 0.8);
         }
     }
+}
+
+// loader
+.loader__container{
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    img{
+        width: 20rem;
+    }
+}
+
+.loader__container.fade__out{
+    top: 110%;
+    opacity: 0;
 }
 
 // media querys

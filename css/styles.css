@@ -611,15 +611,38 @@ section:nth-child(even) {
   color: #192a56;
 }
 
-.footer .hr__footer {
-  width: 100px;
-  height: 5px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
 .footer .footer__copyright .copyright {
   text-align: center;
   color: rgba(25, 42, 86, 0.8);
+}
+
+.loader__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.loader__container img {
+  width: 20rem;
+}
+
+.loader__container.fade__out {
+  top: 110%;
+  opacity: 0;
 }
 
 @media (max-width: 1020px) {

@@ -619,10 +619,10 @@ section:nth-child(even) {
 }
 
 .loader__container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   z-index: 10000;
   background-color: #fff;
@@ -639,7 +639,7 @@ section:nth-child(even) {
 }
 
 .loader__container img {
-  width: 20rem;
+  width: 300px;
 }
 
 .loader__container.fade__out {

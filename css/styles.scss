@@ -491,6 +491,53 @@ section:nth-child(even) {
     }
 }
 
+// footer section styles
+
+.footer {
+    background-color: $green;
+    .footer__box {
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        .footer__item {
+            .item__heading {
+                color: $black;
+                font-size: 1.4rem;
+                margin-bottom: 0.5rem;
+            }
+            .footer__item-list {
+                list-style: none;
+
+                .item__list {
+                    color: rgba($color: #ffffff, $alpha: 0.8);
+                    font-size: 1rem;
+                    margin: 0.5rem 0;
+                    cursor: pointer;
+                    &:hover {
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+
+    .hr__footer {
+        width: 100px;
+        height: 5px;
+        color: rgba($color: #ffffff, $alpha: 0.8);
+    }
+
+    .footer__copyright {
+        .copyright {
+            text-align: center;
+            color: rgba($black, $alpha: 0.8);
+        }
+    }
+}
+
 // media querys
 
 @media (max-width: 1020px) {

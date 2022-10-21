@@ -570,6 +570,58 @@ section:nth-child(even) {
   font-size: 1rem;
 }
 
+.footer {
+  background-color: #27ae60;
+}
+
+.footer .footer__box {
+  margin: 0 auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer .footer__box .footer__item .item__heading {
+  color: #192a56;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer .footer__box .footer__item .footer__item-list {
+  list-style: none;
+}
+
+.footer .footer__box .footer__item .footer__item-list .item__list {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.footer .footer__box .footer__item .footer__item-list .item__list:hover {
+  color: #192a56;
+}
+
+.footer .hr__footer {
+  width: 100px;
+  height: 5px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer .footer__copyright .copyright {
+  text-align: center;
+  color: rgba(25, 42, 86, 0.8);
+}
+
 @media (max-width: 1020px) {
   section {
     padding: 2rem 5%;
